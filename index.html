@@ -3,16 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>To-Do List</title>
     <link rel="stylesheet" href="/stylesheet/styles.css" type="text/css">
     <link rel="script" src="/scripts/index.js" type="text/javascript"></link>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Welcome to To-Do list tracker Website</h1>
     </header>
     <main>
         <p>This is the main content of the website.</p>
+        <span id="todo-list">
+            <h2>To-Do List</h2>
+            
+            <form id="todo-form">
+                <input type="text" id="task-input" placeholder="Add a new task" required>
+                <button type="submit" onclick="addTask()">Add Task</button>
+            </form>
+            
+            <ul id="list">
+                <!-- List items will be dynamically added here -->
+            </ul>
+
+        </span>
     </main>
     <footer>
         <p>&copy; 2025 My Website. All rights reserved.</p>
